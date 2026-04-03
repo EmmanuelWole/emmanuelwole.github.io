@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio showcasing my skills and projects as a full stack web developer.
 
+## 🌐 Live Demo
+
+[View Portfolio](https://RavenGames.github.io/)
+
 ## 🚀 Features
 
 - **Responsive Design**: Optimized for all devices and screen sizes
