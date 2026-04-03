@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Emmanuel Wole's Portfolio - Full Stack Web Developer specializing in modern web technologies, React, Node.js, and creative solutions."
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Web Developer, Emmanuel Wole, Full Stack, React, Node.js, JavaScript, HTML, CSS"
+    />
+    <meta name="author" content="Emmanuel Wole" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1e88e5" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourusername.github.io/" />
+    <meta
+      property="og:title"
+      content="Emmanuel Wole - Full Stack Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing modern web development projects and skills."
+    />
+    <meta
+      property="og:image"
+      content="https://yourusername.github.io/images/portfolio-preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourusername.github.io/" />
+    <meta
+      property="twitter:title"
+      content="Emmanuel Wole - Full Stack Web Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio showcasing modern web development projects and skills."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yourusername.github.io/images/portfolio-preview.png"
+    />
+
+    <title>Emmanuel Wole - Full Stack Web Developer</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="preload" href="js/contact-form.js" as="script" />
+    <link rel="preload" href="js/menu-toggle.js" as="script" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Optimized Font Awesome loading -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    </noscript>
+
+    <!-- EmailJS with integrity check -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      integrity="sha384-9gPHpXcN5LrM5m5Z5K5Tc5n5Lc5n5Lc5n5Lc5n5Lc5n5Lc5n5Lc5n5Lc5n5Lc5n5Lc"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("V8zgpEpXR_kzCdJcg"); // Replace with your EmailJS user ID
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!--Header Section-->
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <!-- Add this inside your header -->
+        <div class="theme-switch">
+          <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fa fa-moon-o"></i>
+          </button>
+        </div>
+        <!-- hamburger button -->
+        <button
+          type="button"
+          class="mobile-menu-button"
+          id="mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          title="Toggle Mobile Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="mobile-menu" aria-hidden="true">
+          <li class="link"><a href="#home">HOME</a></li>
+          <li class="link"><a href="#about">ABOUT</a></li>
+          <li class="link"><a href="#services">SERVICES</a></li>
+          <li class="link"><a href="#skills">SKILLS</a></li>
+          <li class="link"><a href="#projects">PROJECTS</a></li>
+          <li class="link"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Header Section End-->
+
+    <!--Start Hero Section-->
+    <section class="home reveal" id="home">
+      <div class="container">
+        <div class="row full-screen">
+          <div class="home-content">
+            <img
+              src="/images/f1.png"
+              alt="Background"
+              class="background-image"
+            />
+
+            <div class="block">
+              <h6>Hello, My <span class="name-home">Name</span> is</h6>
+              <h1>Emmanuel Wole</h1>
+              <h3>
+                <span class="title-name"
+                  >Frontend Web Developer/Graphics Designer</span
+                >
+              </h3>
+              <div class="cv-btn">
+                <a href="documents/portfolio.pdf">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Hero Section End-->
+
+      <!---Social Media Side Bar-->
+
+      <div class="social-media-sidebar">
+        <div class="social-media-item">
+          <a
+            href="https://www.linkedin.com/in/emmanuel-wole-b27800226"
+            class="social-media-link"
+            title="Visit LinkedIn profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a
+            href="https://www.instagram.com/emmanuelwole"
+            class="social-media-link"
+            title="Visit Instagram profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="social-media-item">
+          <a
+            href="https://github.com/EmmanuelWole"
+            class="social-media-link"
+            title="Visit GitHub profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a
+            href="https://wa.me/237673529269"
+            class="social-media-link"
+            title="Send WhatsApp Message"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--End social media side bar-->
+    </section>
+
+    <section id="about" class="about-me reveal">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h1>About Me</h1>
+            <p class="small text-upper">Information About Me</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="about-content">
+          <div class="row align-item-center">
+            <!-- Add the image -->
+            <div class="about-image">
+              <img src="images/suit 3.jpg" alt="Emmanuel Wole" />
+            </div>
+
+            <!-- Text content -->
+            <div class="text">
+              <h4>I'm Emmanuel Wole</h4>
+              <h6>
+                A <span class="aboutspan">Frontend Web Developer</span> based in
+                <span class="aboutspan">Cameroon</span>
+              </h6>
+              <p>
+                I am a Frontend Web Developer, building the Frontend of Websites
+                and Web Applications that lead to the success of the entire
+                process of web building. Check out some of my work in the
+                project section.
+              </p>
+
+              <p>
+                In addition to developing websites, I am constantly learning
+                modern technologies and improving my coding skills to stay
+                updated in the industry. I believe in creating impactful digital
+                experiences that enhance user engagement and satisfaction.
+              </p>
+
+              <p>
+                I am open to Job Opportunities where I can contribute, learn,
+                and grow. If you have a good opportunity that matches my skills
+                and experiences, don't hesitate to contact me. I look forward to
+                working with you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services reveal">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>My Services</h1>
+          </div>
+        </div>
+
+        <div class="services-content">
+          <!---Services Card -->
+          <div class="services-card">
+            <div class="icon-bg">
+              <i class="ri-mac-fill"></i>
+            </div>
+            <h4>Custom Web Applications</h4>
+            <p>
+              I create custom web applications tailored to your specific needs,
+              ensuring optimal performance and user experience.
+            </p>
+          </div>
+
+          <!---Services Card 2--->
+          <div class="services-card">
+            <div class="icon-bg">
+              <i class="ri-store-3-line"></i>
+            </div>
+            <h4>E-Commerce Development</h4>
+            <p>
+              I build professional web applications which will best suit clients
+              request
+            </p>
+          </div>
+
+          <!---Services Card 3--->
+          <div class="services-card">
+            <div class="icon-bg">
+              <i class="ri-pages-fill"></i>
+            </div>
+            <h4>Landing Page</h4>
+            <p>
+              With a professional landing page, your business is ready to take
+              on another level of success and reach more customers, this makes
+              your business more visible towards a wider audience.
+            </p>
+          </div>
+
+          <!---Services Card 4--->
+          <div class="services-card">
+            <div class="icon-bg">
+              <i class="ri-service-fill"></i>
+            </div>
+            <h4>SEO Optimization</h4>
+            <p>
+              With SEO Optimization your website will standout with better
+              search engine rankings, increased organic traffic, and improved
+              online visibility
+            </p>
+          </div>
+
+          <!---Services Card 5--->
+          <div class="services-card">
+            <div class="icon-bg">
+              <i class="ri-graduation-cap-fill"></i>
+            </div>
+            <h4>Web Development Education</h4>
+            <p>
+              I provide web development education through tutorials, workshops,
+              and one-on-one mentoring to help individuals learn and improve
+              their web development skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills reveal">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>My Skills</h1>
+            <p class="small text-upper">What I Am Good At</p>
+          </div>
+        </div>
+        <div class="skills-content">
+          <div class="skill-card">
+            <h4>HTML</h4>
+            <div class="skill-bar">
+              <div class="skill-level">100%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>CSS</h4>
+            <div class="skill-bar">
+              <div class="skill-level">98%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>JavaScript</h4>
+            <div class="skill-bar">
+              <div class="skill-level">80%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>React</h4>
+            <div class="skill-bar">
+              <div class="skill-level">75%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>Graphic Design</h4>
+            <div class="skill-bar">
+              <div class="skill-level">70%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h4>Firebase</h4>
+            <div class="skill-bar">
+              <div class="skill-level">95%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects reveal">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h1>My Projects</h1>
+            <p class="small text-upper">Some of My Work</p>
+          </div>
+        </div>
+      </div>
+      <div class="projects-content">
+        <div class="project-card">
+          <img
+            src="images/netflixclone.png"
+            alt="Netflix Clone Application Screenshot"
+            loading="lazy"
+          />
+          <h4>Netflix clone App</h4>
+          <p>Netflix clone website .</p>
+          <button
+            type="button"
+            class="preview-button"
+            data-full="images/netflixclone.png"
+            data-caption="Netflix Clone Project"
+          >
+            Preview
+          </button>
+        </div>
+        <div class="project-card">
+          <img
+            src="images/restaurantsite.png"
+            alt="Restaurant Website Screenshot"
+            loading="lazy"
+          />
+          <h4>Restaurant site</h4>
+          <p>My personal portfolio website showcasing my work.</p>
+          <button
+            class="preview-button"
+            data-full="images/restaurantsite.png"
+            data-caption="Restaurant Website Project"
+          >
+            Preview
+          </button>
+        </div>
+        <div class="project-card">
+          <img
+            src="images/todoapp.png"
+            alt="Todo Application Screenshot"
+            loading="lazy"
+          />
+          <h4>ToDo App</h4>
+          <p>Fully functional todo app which manages your daily tasks.</p>
+          <button
+            class="preview-button"
+            data-full="images/todoapp.png"
+            data-caption="Todo Application Project"
+          >
+            Preview
+          </button>
+          <a
+            href="https://ravengames.github.io/my-todo-app/"
+            target="_blank"
+            rel="noopener"
+            class="live-demo-btn"
+            >Live Demo</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/e-commerceshop.png" alt="" />
+          <h4>E-Commerce Shop</h4>
+          <p>
+            |Fully functional e-commerce website which has an admin dashboard.
+          </p>
+          <button
+            class="preview-button"
+            data-full="images/portfolio5.jpg"
+            data-caption="Project Caption"
+          >
+            Preview
+          </button>
+        </div>
+      </div>
+      <div id="image-modal" class="modal" aria-hidden="true">
+        <button class="modal-close" aria-label="Close preview">&times;</button>
+        <img id="modal-image" class="modal-content" alt="" />
+        <div id="modal-caption" class="modal-caption"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="form-container">
+        <h1>CONTACT ME</h1>
+        <form id="contact-form" class="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Username"
+              autocomplete="Username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="@gmail.com"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              name="Message"
+              id="message"
+              class="form-control"
+              rows="4"
+              required="required"
+              placeholder="type your message here"
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button" id="submit">
+            Send Message
+          </button>
+          <div id="loading-icon" class="loading-icon hidden">
+            <i class="fa fa-spinner fa-spin"></i>
+          </div>
+        </form>
+        <div
+          id="toast-container"
+          class="toast-container"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Emmanuel Wole. All rights reserved.</p>
+      </div>
+
+      <div class="social-media-footer">
+        <a
+          title="Visit LinkedIn profile"
+          href="https://www.linkedin.com/in/emmanuel-wole-/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/emmanuelwole/"
+          title="Visit Instagram profile"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com/emmanuelwole/"
+          title="Visit YouTube profile"
+        >
+          <i class="fa fa-youtube"></i>
+        </a>
+
+        <a
+          title="Visit GitHub profile"
+          href="https://www.github.com/emmanuelwole/"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-logo">
+        <h1>PORTFOLIO</h1>
+      </div>
+      <div class="footer-credits">
+        <p>Created by Emmanuel Wole</p>
+      </div>
+    </footer>
+
+    <script src="js/contact-form.js" defer></script>
+    <script src="js/project-preview.js" defer></script>
+    <script src="js/menu-toggle.js" defer></script>
+    <script src="js/theme-toggle.js" defer></script>
+  </body>
+</html>
+<!--End of HTML Document-->
