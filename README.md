@@ -1,10 +1,10 @@
-# Emmanuel Wole - Full Stack Web Developer Portfolio
+# Emmanuel Wole - Self-Taught Frontend Developer
 
-A modern, responsive portfolio showcasing my skills and projects as a full stack web developer.
+A responsive, project-led portfolio introducing my self-taught frontend development journey and selected live work.
 
 ## 🌐 Live Demo
 
-[View Portfolio](https://RavenGames.github.io/)
+[View Portfolio](https://emmanuelwole.github.io/)
 
 ## 🚀 Features
 
@@ -12,8 +12,8 @@ A modern, responsive portfolio showcasing my skills and projects as a full stack
 - **Dark/Light Theme**: Toggle between themes for better user experience
 - **Interactive Contact Form**: EmailJS integration for seamless contact
 - **Smooth Animations**: CSS animations and scroll reveal effects
-- **Project Showcase**: Display of key projects with preview functionality
-- **Skills Section**: Visual representation of technical skills
+- **Project Showcase**: Selected live projects hosted on Netlify
+- **Toolkit Section**: Frontend tools and creative practice
 - **Modern UI/UX**: Clean, professional design with attention to detail
 
 ## 🛠️ Technologies Used
@@ -30,7 +30,8 @@ A modern, responsive portfolio showcasing my skills and projects as a full stack
 portfolio/
 ├── index.html          # Main portfolio page
 ├── css/
-│   └── styles.css      # Main stylesheet
+│   ├── portfolio.css   # Portfolio layout and theme
+│   └── styles.css      # Legacy stylesheet
 ├── js/
 │   ├── contact-form.js # Contact form functionality
 │   ├── menu-toggle.js  # Mobile menu toggle

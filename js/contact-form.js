@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = document.getElementById("message").value.trim();
 
     // Validate form inputs
+    const emailjs = window.emailjs;
     if (!name || !email || !message) {
       alert("Please fill in all fields.");
       loadingIcon.style.display = "none"; // Hide the loading icon

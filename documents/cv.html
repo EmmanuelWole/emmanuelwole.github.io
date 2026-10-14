@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV for Emmanuel Wole, self-taught frontend developer." />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Emmanuel Wole | CV</title>
+    <style>
+      :root {
+        --ink: #1b2925;
+        --muted: #5f6b65;
+        --green: #28574a;
+        --coral: #d95e43;
+        --line: #d6ddd6;
+        --page: #f5f4ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.48;
+      }
+
+      a {
+        color: var(--green);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(245, 244, 239, 0.94);
+      }
+
+      .print-button {
+        padding: 10px 16px;
+        border: 0;
+        background: var(--green);
+        color: white;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 700;
+      }
+
+      .resume {
+        width: min(820px, calc(100% - 32px));
+        margin: 28px auto;
+        padding: 42px 48px;
+        background: white;
+        box-shadow: 0 14px 40px rgba(26, 47, 39, 0.1);
+      }
+
+      .resume-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 18px;
+        border-bottom: 2px solid var(--green);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 3px;
+        font-size: 32px;
+        line-height: 1.1;
+      }
+
+      .role {
+        margin: 0;
+        color: var(--green);
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .location {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .contact-details {
+        display: grid;
+        align-content: center;
+        gap: 5px;
+        text-align: right;
+        font-size: 11px;
+        overflow-wrap: anywhere;
+      }
+
+      section {
+        margin-top: 18px;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        color: var(--green);
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .summary {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .skills-line {
+        margin-bottom: 4px;
+      }
+
+      .skills-line strong {
+        display: inline-block;
+        min-width: 130px;
+        color: var(--ink);
+      }
+
+      .entry {
+        margin-top: 11px;
+        break-inside: avoid;
+      }
+
+      .entry-heading {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: baseline;
+      }
+
+      h3 {
+        margin-bottom: 2px;
+        font-size: 14px;
+      }
+
+      .date,
+      .entry-subtitle {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .entry-subtitle {
+        margin: 0 0 4px;
+        font-weight: 600;
+      }
+
+      .entry p:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-description {
+        margin-bottom: 4px;
+        color: var(--muted);
+      }
+
+      .project-link {
+        margin-left: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .languages {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 600px) {
+        .resume {
+          margin: 12px auto;
+          padding: 27px 22px;
+        }
+
+        .resume-header {
+          display: block;
+        }
+
+        .contact-details {
+          margin-top: 14px;
+          text-align: left;
+        }
+
+        .entry-heading {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .skills-line strong {
+          min-width: 0;
+          margin-right: 6px;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 13mm;
+      }
+
+      @media print {
+        body {
+          background: white;
+          font-size: 10.5px;
+          line-height: 1.35;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .toolbar {
+          display: none;
+        }
+
+        .resume {
+          width: auto;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+
+        .resume-header {
+          padding-bottom: 12px;
+        }
+
+        h1 {
+          font-size: 27px;
+        }
+
+        section {
+          margin-top: 12px;
+        }
+
+        .entry {
+          margin-top: 8px;
+        }
+
+        a {
+          color: inherit;
+        }
+
+        .project-link {
+          color: var(--green);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+    <main class="resume">
+      <header class="resume-header">
+        <div>
+          <h1>Emmanuel Wole</h1>
+          <p class="role">Junior Frontend Developer</p>
+          <p class="location">Cameroon | Open to junior frontend opportunities</p>
+        </div>
+        <div class="contact-details" aria-label="Contact details">
+          <a href="mailto:wolelyongaemma@gmail.com">wolelyongaemma@gmail.com</a>
+          <a href="https://github.com/EmmanuelWole" target="_blank" rel="noopener noreferrer">github.com/EmmanuelWole</a>
+          <a href="https://www.linkedin.com/in/emmanuel-wole-b27800226" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          <a href="https://emmanuelwole.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </div>
+      </header>
+
+      <section aria-labelledby="profile-heading">
+        <h2 id="profile-heading">Profile</h2>
+        <p class="summary">Self-taught frontend developer with hands-on experience building and deploying responsive web projects. Uses HTML, CSS, JavaScript, React, and Firebase, with a background in graphic design and freelance client work. Seeking a junior frontend role to contribute, learn from a team, and grow through real product work.</p>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <p class="skills-line"><strong>Frontend</strong>HTML, CSS, JavaScript, React</p>
+        <p class="skills-line"><strong>Data / services</strong>Firebase</p>
+        <p class="skills-line"><strong>Creative</strong>Graphic design, visual hierarchy, logos, flyers, business cards</p>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>RavenHub Store</h3>
+            <span class="date">Self-directed project</span>
+          </div>
+          <p class="entry-description">Built and deployed an e-commerce project featuring a customer-facing storefront and admin dashboard.<a class="project-link" href="https://ravenhub.netlify.app/" target="_blank" rel="noopener noreferrer">Live demo</a></p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Weather App</h3>
+            <span class="date">Self-directed project</span>
+          </div>
+          <p class="entry-description">Created a web app for viewing current weather information for locations around the world.<a class="project-link" href="https://worldweatheriew.netlify.app/" target="_blank" rel="noopener noreferrer">Live demo</a></p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>CineSearch</h3>
+            <span class="date">Self-directed project</span>
+          </div>
+          <p class="entry-description">Built a movie-search experience for discovering and exploring films.<a class="project-link" href="https://manumoviesearch.netlify.app/" target="_blank" rel="noopener noreferrer">Live demo</a></p>
+        </article>
+      </section>
+
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Freelance Graphic Designer</h3>
+            <span class="date">2020–2023</span>
+          </div>
+          <p class="entry-description">Created logos, flyers, and business cards for freelance clients, building visual communication skills and attention to detail.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education &amp; Training</h2>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Bachelor of Education (B.Ed.)</h3>
+            <span class="date">2017–2020</span>
+          </div>
+          <p class="entry-subtitle">University of Buea</p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Graphic Design Training</h3>
+            <span class="date">2020–2021</span>
+          </div>
+          <p class="entry-subtitle">Rolla Academy, Dubai</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages</h2>
+        <p class="languages">English (Fluent) | French (Conversational)</p>
+      </section>
+    </main>
+  </body>
+</html>
