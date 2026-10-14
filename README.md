@@ -2,9 +2,9 @@
 
 A responsive, project-led portfolio introducing my self-taught frontend development journey and selected live work.
 
-## 🌐 Live Demo
+## 🌐 Live Site
 
-[View Portfolio](https://emmanuelwole.github.io/)
+[View Portfolio](https://emmanuelwole-portfolio.netlify.app/)
 
 ## 🚀 Features
 
@@ -46,6 +46,10 @@ portfolio/
 1. Clone the repository
 2. Open `index.html` in your browser
 3. Customize the content for your own portfolio
+
+## Deploy on Netlify
+
+The `emmanuelwole-portfolio` Netlify site is connected to `EmmanuelWole/emmanuelwole.github.io` on `master` and automatically deploys pushes to that branch. The `netlify.toml` file publishes the repository root with no build command.
 
 ## 📧 Contact
 
